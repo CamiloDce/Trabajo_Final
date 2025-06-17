@@ -1,0 +1,54 @@
+
+
+body {
+  background-color: rgb(83, 83, 83);
+  margin: 0;
+  padding: 0;
+}
+.homepage-container {
+  max-width: 600px;
+  margin: 40px auto;  
+  padding: 20px;
+  text-align: center; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  background-color: rgb(83, 83, 83); 
+  border-radius: 10px;
+  
+}
+
+
+.homepage-container p {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color:#ffffff; 
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.homepage-container img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px; 
+  
+  transition: transform 0.3s ease;
+  background-color: rgb(83, 83, 83);
+}
+
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.homepage-container img {
+  animation: pulse 3s infinite;
+}
+.homepage-container p {
+    animation: pulse 3s infinite;
+}

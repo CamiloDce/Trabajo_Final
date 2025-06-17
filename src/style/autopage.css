@@ -1,0 +1,55 @@
+
+
+.containerAutos {
+  max-width: 900px; 
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  background-color: #3b3b3b;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgb(0, 0, 0);
+  color: #000000;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.column {
+  flex: 1 1 45%;           
+  padding: 0;
+  min-width: 300px;        
+}
+
+.column > * {
+  padding: 1rem;
+  background: #ffffff;  
+  border-radius: 6px;
+  
+}
+
+
+.column > * + * {
+  margin-top: 1rem;
+}
+
+
+.container {
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .columns {
+    flex-direction: column; 
+    gap: 1rem;
+  }
+
+  .column {
+    flex: 1 1 100%;
+    min-width: auto;
+  }
+}
